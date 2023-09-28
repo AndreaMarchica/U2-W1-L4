@@ -7,4 +7,44 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
-
+body {
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  width: 35vw;
+  height: 100vh;
+  margin: 10em auto;
+}
+#testoAlternato {
+  border: 1px solid black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: #333333;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  scale: 2;
+}
+.first,
+.second,
+.third {
+  color: #6b889c;
+}
+span {
+  position: relative;
+}
+@keyframes scrolling {
+  0% {
+    color: white;
+  }
+  20% {
+    color: #6b889c;
+  }
+  100% {
+    color: white;
+  }
+}
+.first {
+  translate: ;
+  animation: scrolling 4s linear 0 infinite;
+}
